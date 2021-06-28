@@ -18,6 +18,12 @@
             }
         </style>
         <script>
+            
+            function showPage(pageid) {
+                var id = document.getElementById(pageid)
+                id.className.style.display = "block";
+            }
+
         </script>
     </head>
     <body>
@@ -30,10 +36,15 @@
                     Thanks for visiting, This is a website i made to show what i had learned during me 3 weeks as well as write a bit about myself
                 </h3>
             </div>
-            <button >Click Here</button>
+            <button data-page="page1">About Me</button>
+            <button data-page="page2">Hobbies</button>
+            <button data-page="page2">page 3</button>
         </div>
-        <div class=page>
-            .
+        <div class=page id=page1>
+            <h1> abot me</h1>
+        </div>
+        <div class=page id=page2>
+            <h1> hobbies</h1>
         </div>
     </body>
 </html>
