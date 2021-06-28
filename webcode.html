@@ -16,14 +16,44 @@
                 text-align: center;
                 padding: 20px;
             }
-        </style>
-        <script>
-            
-            function showPage(pageid) {
-                var id = document.getElementById(pageid)
-                id.className.style.display = "block";
+            @keyframes move {
+                0% {
+                    left: 100%;
+                }
+                100% {
+                    left: 0;
+                }
             }
 
+            .pagebutton {
+                position: relative;
+                animation-name: move;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            button:hover { background-color: green;}
+
+            button {
+                background-color: #1f0ebbab;
+                border: rgb(44, 44, 44);
+                color: white;
+                padding: 10px;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+            }
+
+        </style>
+        <script>
+
+            document.getElementById("abtme").onclick = function() {
+                document.querySelectorAll("page").forEach(page => {
+                    
+                })
+                document.getElementById("abtme").style.display = "block";
+            }
+            
         </script>
     </head>
     <body>
@@ -36,9 +66,9 @@
                     Thanks for visiting, This is a website i made to show what i had learned during me 3 weeks as well as write a bit about myself
                 </h3>
             </div>
-            <button data-page="page1">About Me</button>
-            <button data-page="page2">Hobbies</button>
-            <button data-page="page2">page 3</button>
+            <button class=pagebutton id=abtme >About Me</button>
+            <button class=pagebutton id=hobs>Hobbies</button>
+            <button class=pagebutton id=pg3 >page 3</button>
         </div>
         <div class=page id=page1>
             <h1> abot me</h1>
