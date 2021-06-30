@@ -3,6 +3,12 @@
     <head>
         <title>chief.main</title>
         <style>
+
+            div {
+                column-gap: 100px;
+            }
+
+
             .page {
                 display: none;
             }
@@ -71,7 +77,30 @@
         </style>
         <script>
 
-            function showpage(page) {
+            function showpage1() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page1').setAttribute('style', 'display: block')
+
+            }
+
+            function showpage2() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page2').setAttribute('style', 'display: block')
+
+            }
+
+            function showpage3() {
+                document.getElementById('page1').setAttribute('style', 'display: none')
+                document.getElementById('page2').setAttribute('style', 'display: none')
+                document.getElementById('page3').setAttribute('style', 'display: none')
+                
+                document.getElementById('page3').setAttribute('style', 'display: block')
 
             }
 
@@ -87,15 +116,19 @@
                     Thanks for visiting, This is a website i made to show what i had learned during me 3 weeks as well as write a bit about myself
                 </h3>
             </div>
-            <button class=pagebutton onclick="showpage(page1)" id="page1">About Me</button>
-            <button class=pagebutton onclick="showpage(page2)" id="page2">Hobbies</button>
-            <button class=pagebutton onclick="showpage(page3)" id="page3">FAQ</button>
-        </div>
-        <div class=page id=page1>
-            <h1> about me</h1>
-        </div>
-        <div class=page id=page2>
-            <h1> hobbies</h1>
+            <button class=pagebutton onclick="showpage1()" >About Me</button>
+            <button class=pagebutton onclick="showpage2()" >Hobbies</button>
+            <button class=pagebutton onclick="showpage3()" >FAQ</button>
+
+            <div class=page id=page1>
+                <h1> about me</h1>
+            </div>
+            <div class=page id=page2>
+                <h1> hobbies</h1>
+            </div>
+            <div class=page id=page3>
+                <h1> page3</h1>
+            </div>
         </div>
     </body>
 </html>
