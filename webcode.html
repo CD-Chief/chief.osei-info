@@ -9,13 +9,13 @@
             }
 
             #Main {
-                background-color: rgba(24, 22, 22, 0.938);
                 width: cover;
-                height: 1000px;
+                height: cover;
                 color: white;
                 font-family: Arial;
                 text-align: center;
                 padding: 20px;
+                z-index: 50;
 
             }
 
@@ -69,6 +69,43 @@
                 font-size: 16px;
             }
 
+            .page {
+                animation: fadeInFromNone 3s ease-out;
+            }
+
+
+            .left {
+                float: left;
+                background-color:black;
+                color: white;
+                height: 800px;
+                width: 200;
+                z-index: 100;
+                position: relative;
+                padding: 20px;
+                margin: 20px;
+
+            }
+
+            .middle {
+                float: none;
+                height: 1000px;
+                z-index: 100;
+                position: relative;
+
+            }
+
+            .right {
+                float: right;
+                background-color: black;
+                color: white;
+                height: 800px;
+                width: 200;
+                z-index: 100;
+                position: relative;
+
+            }
+
         </style>
         <script>
 
@@ -101,7 +138,7 @@
 
         </script>
     </head>
-    <body>
+    <body style="background-color: rgba(24, 22, 22, 0.938) ;">
         <div id="Main">
             <header>
                 <h1>Welcome to my Webpage!</h1>
@@ -116,14 +153,94 @@
             <button class=pagebutton onclick="showpage3()" >FAQ</button>
 
             <div class=page id=page1>
-                <h1> about me</h1>
+                <div class="left">
+
+                    <h4>
+                        was going to add pictures
+                         on the left and right 
+                        side but I couldnt get it done in time :(
+                    </h4>
+
+                </div>
+                <div class="middle">
+                    <h2>
+                        <p>
+                            My name is Chief Daniel Osei. I was born on February 23 2005 and am now 16, My parents
+                             come from Ghana but I was born in Germany. I began Kindergarten in Germany and did 2
+                              years of school in Germany but then moved to Ghana and had a school there for 2 more
+                               years before deciding it was too strict there and moved back to Germany. From there
+                                on I continued my education in St.georges up until now and just finished my IGCSE exams. 
+                        </p>
+
+                        <p>
+                            On a different note, let's talk more about myself. I find myself to be a bit quiet around
+                             people I don't know very well yet. This is mostly because I end up thinking too much about
+                              what to say and how to format it in a way that doesn't hurt or offend anybody instead of
+                               just saying my thoughts. 
+                        </p>
+                        
+                    </h2>
+                </div>
+                <div class="right">
+
+                </div>
+
             </div>
+
+
             <div class=page id=page2>
-                <h1> hobbies</h1>
+                <div class="left">
+
+                </div>
+
+                <div class="middle">
+                    <h2>
+                        <p>
+                            I tend to play Video games in my free time with some of my friends as
+                             well as work out now and then either on my own or with my track and
+                              field club. I enjoy running a lot and usually take part in 60 or
+                               100m races, though because of corona I haven't been able to properly
+                                train anymore. My motivation for this has also decreased but I don't
+                                 mind because programming is something I enjoy more and is what lead
+                                  to creating this website
+
+                        </p>
+                        <p>
+                            Additionally, I also take care of two ant colonies (lasius niger). I find
+                             it fascinating watching their synchronized movements and such. I have kept
+                              them from just two queens which altogether have probably already given
+                               birth to over 200 workers, I would show pictures if I could. If you do
+                                want pictures contact me
+                        </p>
+
+    
+                    </h2>
+                </div>
+
+                <div class="right">
+
+                </div>
             </div>
+
+
             <div class=page id=page3>
+                <div class="left">
+
+                </div>
+
+                <div class="middle">
+                    <h2>
+
+    
+                    </h2>
+                </div>
+
+                <div class="right">
+
+                </div>
                 <h1> page3</h1>
             </div>
+
         </div>
     </body>
 </html>
